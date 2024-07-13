@@ -1,0 +1,54 @@
+:root {
+  --faynet-white: #ffffff;
+  --faynet-purple-light: #e1b8e7;
+  --faynet-purple-light-opacity-20: rgb(224, 183, 230, 0.2);
+  --faynet-purple-medium: #893ea0;
+  --faynet-purple-dark: #380d5f;
+  --faynet-yellow: #f9c200;
+  --faynet-yellow-dark: rgb(231, 182, 4);
+  --faynet-green-status-icon: #2aee32;
+  --faynet-green-status-text: #88ff8d;
+  --font-family-montserrat: "Montserrat", sans-serif;
+  --font-weight-thin: 100;
+  --font-weight-extralight: 200;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --font-weight-black: 900;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6em;
+  font-family: var(--font-family-montserrat);
+  font-weight: var(--font-weight-regular);
+}
+
+.container {
+  width: 100%;
+  max-width: 128rem;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
