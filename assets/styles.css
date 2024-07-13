@@ -6,6 +6,8 @@
   --faynet-purple-dark: #380d5f;
   --faynet-yellow: #f9c200;
   --faynet-yellow-dark: rgb(231, 182, 4);
+  --faynet-green-status-icon: #2aee32;
+  --faynet-green-status-text: #88ff8d;
   --font-family-montserrat: "Montserrat", sans-serif;
   --font-weight-thin: 100;
   --font-weight-extralight: 200;
@@ -52,10 +54,20 @@ body {
 }
 
 .banner-hero {
-  background-image: url("./images/banner_hero/banner_hero.png");
+  background-image: url("./images/banner_hero/banner2.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  min-height: 90rem;
+}
+
+.banner-hero-color {
+  background-image: linear-gradient(
+    to bottom,
+    var(--faynet-purple-dark),
+    transparent
+  );
+  min-height: 90rem;
 }
 
 .header-top {
@@ -73,7 +85,28 @@ body {
 }
 
 .header-top-opening-hours p {
-  font-size: 2rem;
+  font-size: 1.6rem;
+}
+
+.header-top-opening-hours-contact {
+  font-weight: var(--font-weight-bold);
+}
+
+.header-top-opening-hours-status {
+  position: relative;
+  margin-left: 2rem;
+  color: var(--faynet-green-status-text);
+}
+
+.header-top-opening-hours-status::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -20px;
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--faynet-green-status-icon);
+  border-radius: 50%;
 }
 
 .header-top-sociais {
@@ -97,15 +130,20 @@ body {
   justify-content: space-between;
 }
 
+.header-menu-logo {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
 .header-menu-logo img {
-  width: 30rem;
+  width: 26rem;
 }
 
 .header-menu-links ul {
   display: flex;
   align-items: center;
   gap: 3rem;
-
   font-weight: var(--font-weight-bold);
 }
 
@@ -114,7 +152,7 @@ body {
   color: var(--faynet-white);
   font-weight: var(--font-weight-bold);
   background-color: var(--faynet-yellow);
-  padding: 2rem 1.6rem;
+  padding: 1.5rem;
   border-radius: 0.8rem;
   text-transform: uppercase;
   -webkit-box-shadow: 0px 20px 11px -9px rgba(0, 0, 0, 0.71);
@@ -125,16 +163,3 @@ body {
 .header-menu-subcriber-center:hover {
   background-color: var(--faynet-yellow-dark);
 }
-
-/* .header-menu-subcriber-center::after {
-  content: "";
-  position: absolute;
-  border-radius: 0.6rem;
-  bottom: -0.8rem;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: var(--faynet-yellow-dark);
-  width: 90%;
-  height: 2rem;
-  z-index: -1;
-} */
