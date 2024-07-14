@@ -3,7 +3,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 90rem;
+  min-height: 60rem;
 }
 
 .banner-hero-color {
@@ -119,7 +119,7 @@
 }
 
 .banner-hero-text {
-  margin-top: 16rem;
+  margin-top: 8rem;
   width: 80%;
   color: var(--faynet-white);
 }
@@ -185,7 +185,7 @@
   }
 
   .banner-hero-text {
-    margin-top: 5rem;
+    margin-top: 3rem;
   }
 
   .banner-hero-text h1 {
