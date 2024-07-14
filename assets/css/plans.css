@@ -1,0 +1,16 @@
+.plan-perfect-for-you h2 {
+  color: var(--faynet-purple-dark);
+  font-size: 3.2rem;
+  line-height: 5rem;
+  font-weight: var(--font-weight-regular);
+}
+
+.plan-perfect-for-you span {
+  font-weight: var(--font-weight-bold);
+}
+
+.plans-perfect-for-you-cards {
+  width: 100%;
+  max-width: 38rem;
+  border: 1px solid var(--faynet-purple-light);
+}

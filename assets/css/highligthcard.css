@@ -1,19 +1,21 @@
 .highlight-card {
+  margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   background-color: var(--faynet-purple-dark);
-  width: 100%;
+  width: 75%;
   color: var(--faynet-white);
   margin-top: -160px;
   border-radius: 0.8rem;
   position: relative;
 }
+
 .highlight-card::after {
   content: "";
   position: absolute;
   top: 0;
   right: 0;
-  width: 50%;
+  width: 40%;
   height: 100%;
   background: url("../images/banner_hero/homem_apontado.png");
   background-size: cover;
@@ -52,7 +54,11 @@
   margin-right: 0.3rem;
 }
 
-.highlight-card button {
+.highlight-card a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
   width: 25rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -62,10 +68,32 @@
   background-color: var(--faynet-yellow);
   color: var(--faynet-purple-dark);
   font-weight: var(--font-weight-regular);
+  font-size: 2rem;
+}
+.highlight-card img {
+  width: 1.6rem;
+  margin-top: 0.2rem;
 }
 
 .highlight-card p:last-child {
   font-size: 1rem;
 }
-.highlight-card-image {
+
+/* .highlight-card-image {
+} */
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .highlight-card {
+    margin-top: -35rem;
+    align-items: center;
+    max-width: 90%;
+  }
+
+  .highlight-card::after {
+    background: none;
+  }
+
+  .highlight-card h2 {
+    font-size: 3.1rem;
+  }
 }
