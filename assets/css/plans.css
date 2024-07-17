@@ -3,14 +3,125 @@
   font-size: 3.2rem;
   line-height: 5rem;
   font-weight: var(--font-weight-regular);
+  margin-bottom: 2rem;
 }
 
-.plan-perfect-for-you span {
+.plan-perfect-for-you > span {
   font-weight: var(--font-weight-bold);
 }
 
 .plans-perfect-for-you-cards {
+}
+
+.plans-perfect-for-you-card {
   width: 100%;
-  max-width: 38rem;
+  max-width: 30rem;
   border: 1px solid var(--faynet-purple-light);
+  border-radius: 1rem;
+}
+
+.plans-perfect-for-you-card-plan {
+  background-color: var(--faynet-purple-dark);
+  text-align: center;
+  border-radius: 1rem 1rem 0 0;
+  border-bottom: 2px solid var(--faynet-white);
+  position: relative;
+}
+
+.plans-perfect-for-you-card-plan p:first-child {
+  font-size: 6rem;
+  color: var(--faynet-white);
+  line-height: 9rem;
+  font-weight: var(--font-weight-medium);
+  padding-bottom: 1rem;
+}
+
+.plans-perfect-for-you-card-plan p:last-child {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--faynet-purple-dark);
+  line-height: 3rem;
+  background-color: var(--faynet-white);
+  padding: 0.2rem 3rem;
+  border-radius: 5rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+  border: 2px solid var(--faynet-purple-dark);
+}
+
+.plans-perfect-for-you-card-description {
+  padding: 4rem 0;
+}
+
+.plans-perfect-for-you-card-description li {
+  font-size: 1.4rem;
+  color: var(--faynet-purple-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.plans-perfect-for-you-card-price {
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+  align-items: start;
+  font-size: 2.4rem;
+  color: var(--faynet-purple-dark);
+  margin-bottom: 4rem;
+}
+
+.currency {
+  font-size: 1.2rem;
+}
+
+.price {
+  font-size: 40px;
+  font-weight: var(--font-weight-medium);
+  margin-top: -10px;
+}
+
+.period {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+}
+
+.plans-perfect-for-you-card-contract {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  position: relative;
+}
+
+.plans-perfect-for-you-card-contract a {
+  background-color: var(--faynet-purple-dark); /* Cor de fundo */
+  color: white; /* Cor do texto */
+  padding: 1rem 3rem; /* Espaçamento interno */
+  border-radius: 2.5rem; /* Bordas arredondadas */
+  text-decoration: none; /* Remove a decoração do link */
+  display: inline-block; /* Para permitir padding e margem */
+  position: relative; /* Para uso do pseudo-elemento */
+  z-index: 1; /* Certifique-se de que o link esteja acima do pseudo-elemento */
+  font-family: Arial, sans-serif; /* Fonte */
+  font-size: 16px; /* Tamanho da fonte */
+  text-align: center; /* Centraliza o texto */
+}
+
+.plans-perfect-for-you-card-contract a::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  border: 2px solid var(--faynet-purple-dark); /* Borda branca */
+  border-radius: 2.5rem; /* Mesma borda arredondada */
+  z-index: -1; /* Certifique-se de que o pseudo-elemento esteja abaixo do link */
 }
