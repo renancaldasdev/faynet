@@ -1,0 +1,38 @@
+.internet-your-family {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.internet-your-family-text {
+  width: 100%;
+  max-width: 50rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.internet-your-family-text h3 {
+  font-size: 3rem;
+  line-height: 3.6rem;
+  color: var(--faynet-purple-dark);
+  font-weight: var(--font-weight-semibold);
+}
+
+.internet-your-family-text p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+.internet-your-family-text a {
+  background-color: var(--faynet-yellow);
+  width: 20rem;
+  text-align: center;
+  padding: 1.4rem 3.2rem;
+  border-radius: 1rem;
+  font-weight: var(--font-weight-medium);
+}
+
+.internet-your-family-img img {
+  width: 100%;
+}
