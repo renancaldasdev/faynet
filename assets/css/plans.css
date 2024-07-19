@@ -1,11 +1,13 @@
 .plan-perfect-for-you h2 {
   color: var(--faynet-purple-dark);
   font-size: 3.2rem;
-  line-height: 5rem;
+  line-height: 3.6rem;
   font-weight: var(--font-weight-regular);
   margin-bottom: 2rem;
   text-align: center;
   position: relative;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .plan-perfect-for-you h2::before {
@@ -15,13 +17,9 @@
   border-radius: 2rem;
   background-color: var(--faynet-purple-dark);
   position: absolute;
-  top: -6px;
+  top: -20px;
   left: 50%;
   transform: translateX(-50%);
-}
-
-.plan-perfect-for-you > span {
-  font-weight: var(--font-weight-bold);
 }
 
 .plans-perfect-for-you-cards {

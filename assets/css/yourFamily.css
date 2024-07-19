@@ -1,4 +1,8 @@
 .internet-your-family {
+  background-color: var(--faynet-purple-dark);
+}
+
+.internet-your-family-content {
   display: flex;
   justify-content: space-between;
   gap: 2rem;
@@ -12,25 +16,46 @@
   justify-content: space-between;
 }
 
-.internet-your-family-text h3 {
-  font-size: 3rem;
+.internet-your-family-text h2 {
+  font-size: 3.2rem;
   line-height: 3.6rem;
-  color: var(--faynet-purple-dark);
-  font-weight: var(--font-weight-semibold);
+  color: var(--faynet-white);
+  font-weight: var(--font-weight-regular);
+  position: relative;
+}
+
+.internet-your-family-text h2::before {
+  content: "";
+  width: 7.5rem;
+  height: 0.6rem;
+  border-radius: 2rem;
+  background-color: var(--faynet-white);
+  position: absolute;
+  top: -20px;
+  left: 0;
 }
 
 .internet-your-family-text p {
   font-size: 1.6rem;
   line-height: 2.4rem;
+  color: var(--faynet-white);
 }
 
 .internet-your-family-text a {
   background-color: var(--faynet-yellow);
+  color: var(--faynet-purple-dark);
   width: 20rem;
   text-align: center;
   padding: 1.4rem 3.2rem;
   border-radius: 1rem;
+  font-size: 1.6rem;
   font-weight: var(--font-weight-medium);
+  transition: 0.5s;
+}
+
+.internet-your-family-text a:hover {
+  background-color: var(--faynet-purple-dark);
+  color: var(--faynet-white);
 }
 
 .internet-your-family-img img {
