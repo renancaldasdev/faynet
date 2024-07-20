@@ -79,22 +79,3 @@
 .highlight-card p:last-child {
   font-size: 1rem;
 }
-
-/* .highlight-card-image {
-} */
-
-@media (min-width: 0px) and (max-width: 768px) {
-  .highlight-card {
-    margin-top: -35rem;
-    align-items: center;
-    max-width: 90%;
-  }
-
-  .highlight-card::after {
-    background: none;
-  }
-
-  .highlight-card h2 {
-    font-size: 3.1rem;
-  }
-}

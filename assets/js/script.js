@@ -1,3 +1,6 @@
+// plans
+
+// Accordion
 document.addEventListener("DOMContentLoaded", function () {
   const buttons = document.querySelectorAll(
     ".the-best-service-for-you-accordion-button"

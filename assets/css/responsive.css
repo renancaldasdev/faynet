@@ -1,0 +1,157 @@
+@media (min-width: 0px) and (max-width: 768px) {
+  /* Responsivo header */
+  .banner-hero {
+    min-height: 100vh;
+  }
+
+  .header-top {
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .header-top-opening-hours p {
+    font-size: 1.4rem;
+  }
+
+  .header-top-sociais a img {
+    width: 2rem;
+  }
+
+  .header-menu-logo img {
+    width: 16rem;
+  }
+
+  .header-menu-links ul {
+    display: none;
+  }
+
+  .header-menu-mobile {
+    cursor: pointer;
+  }
+
+  .header-menu-mobile div {
+    width: 4rem;
+    height: 0.2rem;
+    background-color: var(--faynet-white);
+    margin-bottom: 1rem;
+  }
+
+  .header-menu-subcriber-center {
+    display: none;
+  }
+
+  .banner-hero-text {
+    margin-top: 3rem;
+  }
+
+  .banner-hero-text h1 {
+    font-size: 2rem;
+    line-height: 2.6rem;
+  }
+
+  .banner-hero-text span {
+    letter-spacing: initial;
+  }
+
+  .banner-hero-text p {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+
+  /* Responivo highligth */
+
+  .highlight-card {
+    margin-top: -10rem;
+    align-items: center;
+    max-width: 90%;
+  }
+
+  .highlight-card::after {
+    background: none;
+  }
+
+  .highlight-card h2 {
+    font-size: 3.2rem;
+    text-align: center;
+  }
+
+  /* Responsivo plans */
+
+  .plan-perfect-for-you h2 {
+    font-size: 2.4rem;
+    line-height: 3rem;
+  }
+
+  .plans-perfect-for-you-cards {
+    justify-content: inherit;
+    white-space: nowrap;
+    overflow-x: auto;
+  }
+
+  .plans-perfect-for-you-card {
+    flex: 0 0 auto;
+  }
+
+  .plans-perfect-for-you-card.special-offer {
+    padding: 2rem 0;
+    z-index: 0;
+  }
+
+  .plans-perfect-for-you-card-best-offer {
+    top: 20px;
+    left: -19px;
+    transform: rotate(-30deg);
+    padding: 0.8rem 1rem;
+    font-size: 1.2rem;
+  }
+
+  .plans-perfect-for-you-card-plan {
+    z-index: -1;
+  }
+
+  /* responsivo your family */
+  .internet-your-family-content {
+    flex-direction: column;
+  }
+  .internet-your-family-text {
+    max-width: 100%;
+  }
+  .internet-your-family-text h2 {
+    font-size: 2.6rem;
+    line-height: 3rem;
+    margin-bottom: 2rem;
+  }
+  .internet-your-family-text p {
+    margin-bottom: 2rem;
+  }
+  /* repsonsivo faq */
+
+  .the-best-service-for-you-content {
+    flex-direction: column;
+  }
+
+  .the-best-service-for-you-text h2 {
+    font-size: 2.6rem;
+    line-height: 3rem;
+  }
+  .the-best-service-for-you-image {
+    display: none;
+  }
+  .the-best-service-for-you-accordion-button {
+    font-size: 1.7rem;
+    line-height: 2.4rem;
+  }
+
+  .the-best-service-for-you-text,
+  .the-best-service-for-you-accordion {
+    max-width: 100%;
+  }
+  .the-best-service-for-you-button a {
+    margin-top: 2rem;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Regras para tablets */
+}
