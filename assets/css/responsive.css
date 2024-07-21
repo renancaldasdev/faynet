@@ -1,7 +1,8 @@
 @media (min-width: 0px) and (max-width: 768px) {
   /* Responsivo header */
   .banner-hero {
-    min-height: 100vh;
+    height: 100vh;
+    min-height: 80rem;
   }
 
   .header-top {
@@ -63,13 +64,17 @@
   /* Responivo highligth */
 
   .highlight-card {
-    margin-top: -10rem;
+    margin-top: -40rem;
     align-items: center;
     max-width: 90%;
   }
 
   .highlight-card::after {
     background: none;
+  }
+
+  .highlight-card p:first-child {
+    text-align: center;
   }
 
   .highlight-card h2 {
@@ -140,7 +145,7 @@
     display: none;
   }
   .the-best-service-for-you-accordion-button {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     line-height: 2.4rem;
   }
 
