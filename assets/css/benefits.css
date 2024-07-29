@@ -1,0 +1,97 @@
+.benefits-your-family {
+  display: flex;
+}
+
+.benefits-your-family-img {
+  width: 80rem;
+  max-width: 100%;
+}
+
+.benefits-your-family img {
+  width: 100%;
+  max-width: 80rem;
+  border-radius: 0 0.8rem 0.8rem 0;
+}
+
+.benefits-your-family-item {
+  width: 60%;
+  background-color: var(--faynet-purple-dark);
+  position: relative;
+  z-index: 1;
+  padding: 6rem;
+}
+
+.benefits-your-family-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background-color: white;
+}
+.benefits-your-family-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background-color: white;
+}
+
+.benefits-your-family-item-title h2 {
+  font-size: 3.6rem;
+  line-height: 4rem;
+  color: var(--faynet-white);
+  font-weight: var(--font-weight-regular);
+  position: relative;
+}
+
+.benefits-your-family-item-title h2::before {
+  content: "";
+  width: 7.5rem;
+  height: 0.6rem;
+  border-radius: 2rem;
+  background-color: var(--faynet-white);
+  position: absolute;
+  top: -20px;
+  left: 0;
+}
+
+.benefits-your-family-itens {
+  margin-top: 4rem;
+}
+
+.benefits-your-family-itens-content {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  color: var(--faynet-white);
+}
+.benefits-your-family-itens {
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+  flex-wrap: wrap;
+}
+
+.benefits-your-family-itens img {
+  width: 100%;
+  max-width: 8rem;
+}
+
+.benefits-your-family-itens-content-text {
+  width: 100%;
+  max-width: 30rem;
+}
+
+.benefits-your-family-itens-content-text h4 {
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  margin-bottom: 0.6rem;
+}
+.benefits-your-family-itens-content-text p {
+  font-size: 2rem;
+  line-height: 3rem;
+}
