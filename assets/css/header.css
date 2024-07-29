@@ -3,7 +3,10 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 60rem;
+  /* min-height: auto; */
+}
+.banner-hero .container {
+  padding-bottom: 0;
 }
 
 .banner-hero-color {
@@ -118,25 +121,131 @@
   background-color: var(--faynet-yellow-dark);
 }
 
-.banner-hero-text {
-  margin-top: 8rem;
-  width: 80%;
-  color: var(--faynet-white);
+.banner-hero-header {
+  display: flex;
+  justify-content: space-between;
 }
 
-.banner-hero-text h1 {
-  font-size: 3.2rem;
-  line-height: 4rem;
-  font-weight: var(--font-weight-bold);
+.banner-hero-text {
+  width: 100%;
+  max-width: 60%;
+  margin-top: 8rem;
+  color: var(--faynet-white);
+  padding-bottom: 4rem;
 }
 
 .banner-hero-text span {
+  display: block;
   text-transform: uppercase;
-  letter-spacing: 0.4rem;
+  font-size: 1.4rem;
+  color: var(--faynet-yellow);
+  font-weight: var(--font-weight-medium);
+}
+
+.banner-hero-text h1 {
+  font-size: 5.8rem;
+  line-height: 6rem;
+  font-weight: var(--font-weight-bold);
+  margin: 3rem 0;
 }
 
 .banner-hero-text p {
   font-size: 2rem;
-  line-height: 3.6rem;
+  line-height: 3rem;
   font-weight: var(--font-weight-regular);
+  margin-bottom: 3rem;
+}
+
+.banner-hero-text a {
+  margin-top: 4rem;
+  background-color: var(--faynet-yellow);
+  width: 100%;
+  max-width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.4rem 0;
+  border-radius: 1rem;
+  color: var(--faynet-purple-dark);
+  font-weight: var(--font-weight-medium);
+}
+
+.banner-hero-promotion {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  min-height: 60rem;
+}
+
+.banner-hero-content {
+  backdrop-filter: blur(5px);
+  background-color: rgba(75, 0, 130, 0.3);
+  color: var(--faynet-white);
+  padding: 2rem;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.banner-hero-promotion-title {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  justify-content: space-between;
+  margin-bottom: 2.4rem;
+}
+.banner-hero-promotion-title h3 {
+  font-size: 3.4rem;
+  line-height: 4.6rem;
+  font-weight: var(--font-weight-bold);
+}
+
+.banner-hero-promotion-title p {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-weight: var(--font-weight-medium);
+  letter-spacing: 0.025rem;
+  background-color: var(--faynet-yellow);
+  color: var(--faynet-purple-dark);
+  padding: 0.4rem 2rem;
+  border-radius: 1.2rem;
+}
+
+.banner-hero-promotion-description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner-hero-promotion-description ul li {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+.banner-hero-promotion-description .banner-hero-promotion-price {
+  text-align: center;
+}
+
+.banner-hero-promotion-description .banner-hero-promotion-price p {
+  font-size: 2.8rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--faynet-yellow);
+}
+
+.banner-hero-promotion-description .banner-hero-promotion-price span {
+  font-size: 1.4rem;
+}
+
+.banner-hero-promotion-button {
+  margin-top: 4rem;
+  background-color: var(--faynet-yellow);
+  width: 100%;
+  max-width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.4rem 0;
+  border-radius: 1rem;
+  color: var(--faynet-purple-dark);
+  font-weight: var(--font-weight-medium);
 }
