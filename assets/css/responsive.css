@@ -1,8 +1,10 @@
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 767px) {
+  .call-to-action a {
+    width: 100%;
+  }
   /* Responsivo header */
   .banner-hero {
-    height: 100vh;
-    min-height: 80rem;
+    min-height: auto;
   }
 
   .header-top {
@@ -10,6 +12,11 @@
     margin-bottom: 3rem;
     justify-content: center;
     gap: 2rem;
+  }
+
+  .header-top-opening-hours {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .header-top-opening-hours p {
@@ -61,25 +68,47 @@
     line-height: 2rem;
   }
 
-  /* Responivo highligth */
-
-  .highlight-card {
-    margin-top: -40rem;
-    align-items: center;
-    max-width: 90%;
+  .banner-hero-header {
+    flex-direction: column;
+    justify-content: inherit;
   }
 
-  .highlight-card::after {
-    background: none;
+  .banner-hero-text {
+    max-width: 100%;
   }
 
-  .highlight-card p:first-child {
-    text-align: center;
+  .banner-hero-text a {
+    max-width: 100%;
   }
 
-  .highlight-card h2 {
-    font-size: 3.2rem;
-    text-align: center;
+  .banner-hero-promotion {
+    min-height: auto;
+  }
+  .banner-hero-promotion-title {
+    gap: 2rem;
+    flex-direction: column;
+  }
+
+  .banner-hero-promotion-description ul li {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+  .banner-hero-promotion-description .banner-hero-promotion-price p {
+    font-size: 2rem;
+  }
+
+  .banner-hero-promotion-button a {
+    max-width: 100%;
+  }
+
+  .banner-hero-promotion-title p {
+    padding: 0.4rem 1rem;
+    line-height: 1.6rem;
+  }
+
+  .banner-hero-promotion-title h3 {
+    font-size: 2.4rem;
+    line-height: 3rem;
   }
 
   /* Responsivo plans */
@@ -131,6 +160,52 @@
   .internet-your-family-text p {
     margin-bottom: 2rem;
   }
+
+  /* responsivo beneficios */
+  .benefits-your-family-img {
+    display: none;
+  }
+
+  .benefits-your-family-item {
+    padding: 6rem 2rem;
+  }
+
+  .benefits-your-family-item-title h2 {
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+
+  .benefits-your-family-itens {
+    gap: 2rem;
+  }
+
+  .benefits-your-family-itens-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .benefits-your-family-itens img {
+    max-width: 4rem;
+  }
+
+  .benefits-your-family-itens-content-text {
+    max-width: 100%;
+  }
+
+  .benefits-your-family-itens-content-text h4 {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    text-align: center;
+  }
+
+  .benefits-your-family-itens-content-text p {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    text-align: center;
+  }
+
   /* repsonsivo faq */
 
   .the-best-service-for-you-content {
@@ -149,6 +224,10 @@
     line-height: 2.4rem;
   }
 
+  .the-best-service-for-you-accordion-content p {
+    font-size: 1.2rem;
+  }
+
   .the-best-service-for-you-text,
   .the-best-service-for-you-accordion {
     max-width: 100%;
@@ -157,6 +236,67 @@
     margin-top: 2rem;
   }
 }
-@media (min-width: 769px) and (max-width: 1024px) {
-  /* Regras para tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header-menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .header-menu-subcriber-center {
+    padding: 1rem;
+  }
+
+  .banner-hero-text h1 {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+  .banner-hero-text p {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+  .benefits-your-family {
+    flex-direction: column;
+  }
+
+  .benefits-your-family-item::after,
+  .benefits-your-family-item::before {
+    position: inherit;
+  }
+
+  .benefits-your-family-item-title h2 {
+    font-size: 3rem;
+    line-height: 2.8rem;
+  }
+
+  .benefits-your-family-itens-content {
+    width: 40%;
+  }
+
+  .benefits-your-family-itens img {
+    max-width: 4rem;
+  }
+
+  .the-best-service-for-you-text {
+    max-width: 100%;
+  }
+  .the-best-service-for-you-accordion {
+    max-width: 100%;
+  }
+
+  .the-best-service-for-you-image {
+    display: none;
+  }
+  .the-best-service-for-you-content {
+    justify-content: center;
+  }
+
+  .benefits-your-family-itens-content-text h4 {
+    font-size: 2rem;
+    line-height: 1.6rem;
+  }
+  .benefits-your-family-itens-content-text p {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
 }

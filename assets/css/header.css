@@ -3,7 +3,6 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  /* min-height: auto; */
 }
 .banner-hero .container {
   padding-bottom: 0;
@@ -157,17 +156,9 @@
 }
 
 .banner-hero-text a {
-  margin-top: 4rem;
-  background-color: var(--faynet-yellow);
   width: 100%;
   max-width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 1.4rem 0;
-  border-radius: 1rem;
-  color: var(--faynet-purple-dark);
-  font-weight: var(--font-weight-medium);
 }
 
 .banner-hero-promotion {
@@ -236,16 +227,7 @@
   font-size: 1.4rem;
 }
 
-.banner-hero-promotion-button {
-  margin-top: 4rem;
-  background-color: var(--faynet-yellow);
+.banner-hero-promotion-button a {
   width: 100%;
   max-width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1.4rem 0;
-  border-radius: 1rem;
-  color: var(--faynet-purple-dark);
-  font-weight: var(--font-weight-medium);
 }
