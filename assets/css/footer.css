@@ -73,3 +73,19 @@ footer {
   max-width: 4rem;
   padding: 0.6rem;
 }
+
+.copyright {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 2rem 2rem 0 2rem;
+
+  font-size: 1.4rem;
+
+  border-top: 1px solid var(--faynet-white);
+}
+.copyright a {
+  font-weight: var(--font-weight-black);
+  display: inline-block;
+}

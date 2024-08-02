@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./assets/css/styles.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,6 +29,7 @@
             <div class="header-top-opening-hours">
               <p>Atendimento</p>
               <p class="header-top-opening-hours-contact">(21) 98794 0668</p>
+              <a href="">2ª via do boleto</a>
               <p class="header-top-opening-hours-status">On-line</p>
             </div>
             <div class="header-top-sociais">
@@ -221,7 +227,7 @@
       </section>
       <section class="plan-perfect-for-you container" id="plans">
         <h2>O plano <strong>perfeito</strong> para <strong>você!</strong></h2>
-        <div id="cardSlider" class="plans-perfect-for-you-cards swiper-wrapper">
+        <div id="cardSlider" class="plans-perfect-for-you-cards">
           <div class="plans-perfect-for-you-card">
             <div class="plans-perfect-for-you-card-plan">
               <p>100</p>
@@ -544,6 +550,14 @@
           <div class="the-best-service-for-you-image"></div>
         </div>
       </section>
+
+      <section class="container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper"></div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
     </main>
 
     <footer>
@@ -609,9 +623,13 @@
             </div>
           </div>
         </div>
+        <div class="copyright">
+          <p>Desenvolvido por <a href="">Renan Caldas</a></p>
+        </div>
       </div>
     </footer>
-  </body>
 
-  <script type="module" src="./assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>
