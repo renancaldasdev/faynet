@@ -17,6 +17,13 @@
   left: 0;
 }
 
+.testimonials p {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: var(--faynet-purple-dark);
+  margin-top: 1rem;
+}
+
 .mySwiper .swiper,
 .mySwiper .swyperPlans {
   width: 100%;

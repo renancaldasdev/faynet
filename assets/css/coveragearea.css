@@ -1,0 +1,33 @@
+.coverage-area {
+  background-color: var(--faynet-purple-dark);
+  border-radius: 4rem 4rem 0 0;
+}
+
+.coverage-area-title {
+  margin-bottom: 2re;
+}
+
+.coverage-area-title h2 {
+  font-size: 3.2rem;
+  line-height: 3.6rem;
+  color: var(--faynet-white);
+  font-weight: var(--font-weight-regular);
+  position: relative;
+}
+
+.coverage-area-title p {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: var(--faynet-white);
+}
+
+.coverage-area-title h2::before {
+  content: "";
+  width: 7.5rem;
+  height: 0.6rem;
+  border-radius: 2rem;
+  background-color: var(--faynet-white);
+  position: absolute;
+  top: -20px;
+  left: 0;
+}
