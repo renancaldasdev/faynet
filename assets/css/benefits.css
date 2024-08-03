@@ -4,13 +4,13 @@
 }
 
 .benefits-your-family-img {
-  width: 120rem;
-  max-width: 100%;
+  width: 100%;
+  max-width: 60rem;
 }
 
 .benefits-your-family img {
   width: 100%;
-  max-width: 100rem;
+  max-width: 60rem;
   border-radius: 0 0.8rem 0.8rem 0;
 }
 
@@ -19,7 +19,7 @@
   background-color: var(--faynet-purple-dark);
   position: relative;
   z-index: 1;
-  padding: 6rem;
+  padding: 6rem 2rem 2rem 2rem;
 }
 
 .benefits-your-family-item::before {
@@ -44,7 +44,7 @@
 }
 
 .benefits-your-family-item-title h2 {
-  font-size: 3.6rem;
+  font-size: rem;
   line-height: 4rem;
   color: var(--faynet-white);
   font-weight: var(--font-weight-regular);
@@ -63,8 +63,10 @@
 }
 
 .benefits-your-family-itens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6rem 2rem;
   margin-top: 4rem;
-  max-width: 90rem;
 }
 
 .benefits-your-family-itens-content {
@@ -72,31 +74,27 @@
   gap: 2rem;
   align-items: center;
   color: var(--faynet-white);
-}
-
-.benefits-your-family-itens {
-  display: flex;
-  align-items: center;
-  gap: 6rem;
-  flex-wrap: wrap;
+  width: 100%;
+  max-width: 60rem;
+  flex: 1 1 calc(50% - 10px);
 }
 
 .benefits-your-family-itens img {
   width: 100%;
-  max-width: 8rem;
+  max-width: 4rem;
 }
 
 .benefits-your-family-itens-content-text {
   width: 100%;
-  max-width: 30rem;
+  max-width: 40rem;
 }
 
 .benefits-your-family-itens-content-text h4 {
-  font-size: 2.4rem;
-  line-height: 3.6rem;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
   margin-bottom: 0.6rem;
 }
 .benefits-your-family-itens-content-text p {
-  font-size: 2rem;
-  line-height: 3rem;
+  font-size: 1.6rem;
+  line-height: 2rem;
 }

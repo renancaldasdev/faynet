@@ -82,26 +82,3 @@ body {
   background-color: var(--faynet-purple-dark);
   color: var(--faynet-white);
 }
-
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 4rem;
-}
-
-.swiper-slide img {
-  width: 50px;
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: cover;
-}

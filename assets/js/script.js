@@ -29,39 +29,55 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  fetch("https://jsonplaceholder.typicode.com/albums/1/photos")
-    .then((response) => response.json())
-    .then((photos) => {
-      const swiperWrapper = document.querySelector(".swiper-wrapper");
-      swiperWrapper.innerHTML = "";
+  const photos = [
+    {
+      url: "https://plus.unsplash.com/premium_photo-1666900440561-94dcb6865554?q=80&w=1527&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      title: "Foto da Montanha",
+      description: "Lorem ipsum dolor sit amet consectetur,",
+    },
+    {
+      url: "https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?q=80&w=1296&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      title: "Por do Sol na Praia",
+      description:
+        "Lorem ipsum dolor sit amet consectetur,Lorem ipsum dolor sit amet consectetur",
+    },
+    {
+      url: "https://plus.unsplash.com/premium_photo-1664392248318-4e1d9361726e?q=80&w=1283&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      title: "Cidade à Noite",
+      description:
+        "Lorem ipsum dolor sit amet consectetur,Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
+    },
+  ];
 
-      photos.forEach((photo) => {
-        const slide = document.createElement("div");
-        slide.className = "swiper-slide";
-        slide.innerHTML = `
+  const swiperWrapper = document.querySelector(".mySwiper .swiper-wrapper");
+  swiperWrapper.innerHTML = "";
+
+  photos.forEach((photo) => {
+    const slide = document.createElement("div");
+    slide.className = "swiper-slide";
+    slide.innerHTML = `
         <img src="${photo.url}" alt="${photo.title}">
-               <p>${photo.title}</p>
+               <p class="testimonials-title">${photo.title}</p>
+               <p class="testimonials-description">${photo.description}</p>
         `;
-        swiperWrapper.appendChild(slide);
-      });
+    swiperWrapper.appendChild(slide);
+  });
 
-      const swiper = new Swiper(".swiper", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        effect: "fade",
-        loop: true,
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        coverFlow: {
-          depth: 100,
-        },
-      });
-    })
-    .catch((error) => console.error("Erro ao carregar fotos:", error));
+  const swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    effect: "fade",
+    loop: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    coverFlow: {
+      depth: 100,
+    },
+  });
 });

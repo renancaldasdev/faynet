@@ -1,4 +1,16 @@
 @media (min-width: 0px) and (max-width: 767px) {
+  .plans-perfect-for-you-cards {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
+
+  .plans-perfect-for-you-card {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    margin: 0 5px;
+  }
+
   .call-to-action a {
     width: 100%;
   }
@@ -121,7 +133,7 @@
   .plans-perfect-for-you-cards {
     justify-content: inherit;
     white-space: nowrap;
-    overflow-x: auto;
+    margin-bottom: 4rem;
   }
 
   .plans-perfect-for-you-card {
@@ -236,6 +248,11 @@
     margin-top: 2rem;
   }
 
+  .the-best-service-for-you-text .call-to-action a {
+    padding: 1.4rem;
+    width: 100%;
+  }
+
   .footer-container {
     flex-direction: column;
     gap: 2rem;
@@ -263,8 +280,8 @@
     font-size: 1.6rem;
     line-height: 2rem;
   }
-  .benefits-your-family {
-    flex-direction: column;
+  .benefits-your-family-item {
+    padding: 6rem 2rem 2rem 2rem;
   }
 
   .benefits-your-family-item::after,
@@ -273,12 +290,27 @@
   }
 
   .benefits-your-family-item-title h2 {
-    font-size: 3rem;
-    line-height: 2.8rem;
+    font-size: 2.2rem;
+    line-height: 2.6rem;
   }
 
   .benefits-your-family-itens-content {
     width: 40%;
+  }
+
+  .benefits-your-family-itens-content-text {
+    width: 100%;
+    max-width: 40rem;
+  }
+
+  .benefits-your-family-itens-content-text h4 {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-bottom: 0.6rem;
+  }
+  .benefits-your-family-itens-content-text p {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
   }
 
   .benefits-your-family-itens img {
@@ -297,14 +329,5 @@
   }
   .the-best-service-for-you-content {
     justify-content: center;
-  }
-
-  .benefits-your-family-itens-content-text h4 {
-    font-size: 2rem;
-    line-height: 1.6rem;
-  }
-  .benefits-your-family-itens-content-text p {
-    font-size: 1.6rem;
-    line-height: 2rem;
   }
 }
