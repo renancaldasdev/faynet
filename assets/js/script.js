@@ -1,3 +1,46 @@
+document.getElementById("hamburger").addEventListener("click", function () {
+  this.classList.toggle("show");
+  document.getElementById("menu").classList.toggle("show");
+});
+
+document.querySelectorAll("#menu li a").forEach((item) => {
+  item.addEventListener("click", function () {
+    document.getElementById("hamburger").classList.remove("show");
+    document.getElementById("menu").classList.remove("show");
+  });
+});
+
+function setOpeningHours(isOnSchedule) {
+  const statusElement = document.querySelector(
+    ".header-top-opening-hours-status"
+  );
+
+  if (isOnSchedule) {
+    statusElement.textContent = "On-line";
+    statusElement.classList.remove("offline");
+  } else {
+    statusElement.textContent = "Off-line";
+    statusElement.classList.add("offline");
+  }
+}
+
+function checkOpeningHours() {
+  const timeNow = new Date();
+  const dayOfTheWeek = timeNow.getDay();
+  const currentTime = timeNow.getHours();
+
+  const isOnSchedule =
+    dayOfTheWeek >= 1 &&
+    dayOfTheWeek <= 6 &&
+    currentTime >= 8 &&
+    currentTime < 21;
+
+  setOpeningHours(isOnSchedule);
+}
+
+checkOpeningHours();
+const checkInterval = setInterval(checkOpeningHours, 60);
+
 document.addEventListener("DOMContentLoaded", function () {
   const buttons = document.querySelectorAll(
     ".the-best-service-for-you-accordion-button"

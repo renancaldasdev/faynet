@@ -47,8 +47,27 @@
     display: none;
   }
 
-  .header-menu-mobile {
+  .header-menu-links ul.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--faynet-purple-dark);
+    min-height: 100vh;
+    min-width: 100vw;
+    z-index: 1;
+  }
+
+  .header-menu-mobile.show {
     cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 3;
   }
 
   .header-menu-mobile div {
@@ -56,6 +75,20 @@
     height: 0.2rem;
     background-color: var(--faynet-white);
     margin-bottom: 1rem;
+  }
+
+  #hamburger.show div:nth-child(1) {
+    width: 2rem;
+    transform: rotate(45deg) translate(20px, 0px);
+  }
+
+  #hamburger.show div:nth-child(2) {
+    opacity: 0;
+  }
+
+  #hamburger.show div:nth-child(3) {
+    width: 2rem;
+    transform: rotate(-45deg) translate(16px, 2px);
   }
 
   .header-menu-subcriber-center {
@@ -97,16 +130,20 @@
     min-height: auto;
   }
   .banner-hero-promotion-title {
-    gap: 2rem;
+    gap: 0.6rem;
     flex-direction: column;
+  }
+  .banner-hero-promotion-description {
+    gap: 2rem;
   }
 
   .banner-hero-promotion-description ul li {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 2rem;
+    gap: 0.2rem;
   }
   .banner-hero-promotion-description .banner-hero-promotion-price p {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .banner-hero-promotion-button a {
