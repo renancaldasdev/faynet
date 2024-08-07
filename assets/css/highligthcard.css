@@ -11,19 +11,6 @@
   position: relative;
 }
 
-.highlight-card::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 40%;
-  height: 100%;
-  background: url("../images/banner_hero/homem_apontado.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: left;
-}
-
 .highlight-card p:first-child {
   font-size: 1.6rem;
   line-height: 2.2rem;

@@ -1,3 +1,28 @@
+import "../css/styles.css";
+import "../images/banner_hero/banner1.jpg";
+import "../images/banner_hero/banner2.jpg";
+import "../images/banner_hero/faynet_logo.png";
+import "../images/icons/arrow_rigth.svg";
+import "../images/icons/atendimento-tecnico.svg";
+import "../images/icons/check.svg";
+import "../images/icons/download.svg";
+import "../images/icons/email.svg";
+import "../images/icons/facebook.svg";
+import "../images/icons/financeiro-tecnico.svg";
+import "../images/icons/instagram.svg";
+import "../images/icons/phone.svg";
+import "../images/icons/qualidade.svg";
+import "../images/icons/reparo-tecnico.svg";
+import "../images/icons/upload-tecnico.svg";
+import "../images/icons/upload.svg";
+import "../images/icons/user.svg";
+import "../images/icons/velocidade-tecnico.svg";
+import "../images/icons/whatsapp.svg";
+import "../images/icons/wifi.svg";
+import "../images/images_all/callcenter.webp";
+import "../images/images_all/img.jpg";
+import "../images/images_all/internet_your_family.webp";
+
 document.getElementById("hamburger").addEventListener("click", function () {
   this.classList.toggle("show");
   document.getElementById("menu").classList.toggle("show");
