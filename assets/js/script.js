@@ -78,21 +78,33 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
   const photos = [
     {
-      url: "https://plus.unsplash.com/premium_photo-1666900440561-94dcb6865554?q=80&w=1527&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      title: "Foto da Montanha",
-      description: "Lorem ipsum dolor sit amet consectetur,",
+      url: "https://lh3.googleusercontent.com/a-/ALV-UjWrGOWuf0DwECJ6Pfv97rjY1O0gSjhw5vZNu3aGBdznBhIEoAZq=s45-c-rp-mo-br100",
+      title: "Marcelo Paiva de Sousa",
+      description:
+        "Excelente atendimento da Anna, da FAYNET PEDRA DE GUARATIBA, em 05/08/2024! Associados Josélia Lima e Marcelo Paiva",
     },
     {
-      url: "https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?q=80&w=1296&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      title: "Por do Sol na Praia",
+      url: "https://lh3.googleusercontent.com/a-/ALV-UjUxW4M2OR7fVvxdUMRs-rGudW_gp3GrtgZ_RbVRep6NeEmHw1nPPw=s45-c-rp-mo-br100",
+      title: "Ester Roque",
       description:
-        "Lorem ipsum dolor sit amet consectetur,Lorem ipsum dolor sit amet consectetur",
+        "O atendimento é muito bom, gostei porque eles sabem quando acontece algo de errado com a conexão, e ligam pra resolver. Parabéns",
     },
     {
-      url: "https://plus.unsplash.com/premium_photo-1664392248318-4e1d9361726e?q=80&w=1283&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      title: "Cidade à Noite",
+      url: "https://lh3.googleusercontent.com/a-/ALV-UjUqznzmh4kJsMAMIpBRkV1-3PTDd1W7E-h-y5DysyEvQn1lxRPU=s45-c-rp-mo-br100",
+      title: "Mosatio op",
       description:
-        "Lorem ipsum dolor sit amet consectetur,Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
+        "Instalei tem uma semana, Internet maravilhosa, atendimento muito bom também acho que quem me atendeu foi um atendente miguel atencioso explica tudo direitinho, os técnicos vieram na minha casa botaram o roteador aonde eu queria furaram tudo direitinho sem problema até agora, indico demais!",
+    },
+    {
+      url: "https://lh3.googleusercontent.com/a-/ALV-UjU7YnB7GKkPd6SzWHoPmPKygoFHDsCkThiLmIOIAaYP0KYVoufNmw=s45-c-rp-mo-br100",
+      title: "Raissa Santos",
+      description: "Fui super bem atendida, adorei o atendimento ❤️",
+    },
+    {
+      url: "https://lh3.googleusercontent.com/a-/ALV-UjWErZh9qRtEvmUzmKESWYRzfFJBV7vCYOIRdvUmES_0t9Czj_ge=s45-c-rp-mo-br100",
+      title: "Cristian Douglas",
+      description:
+        "Muito bom atendimento, tanto na hora da contratação do serviço, quanto no momento da instalação. Todos muito bem atenciosos. O serviço ainda estou testando, mas aparentemente entrega o que propõe. Estou satisfeito!!!",
     },
   ];
 

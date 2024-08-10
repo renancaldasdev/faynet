@@ -24,12 +24,6 @@
   margin-top: 1rem;
 }
 
-.mySwiper .swiper,
-.mySwiper .swyperPlans {
-  width: 100%;
-  height: 100%;
-}
-
 .mySwiper .swiper-slide {
   background: #fff;
   display: flex;
@@ -37,11 +31,12 @@
   justify-content: center;
   align-items: center;
   padding: 4rem;
+  height: auto;
 }
 
 .mySwiper .swiper-slide img {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   max-width: 100%;
   max-height: 100%;
