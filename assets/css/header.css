@@ -102,13 +102,21 @@
   font-weight: var(--font-weight-bold);
 }
 
+.header-menu-links ul .subscriber {
+  display: none;
+}
+
+.header-central-mobile {
+  display: none;
+}
+
 .header-menu-subcriber-center {
   display: flex;
   align-items: center;
   gap: 1rem;
   cursor: pointer;
   background-color: var(--faynet-yellow);
-  padding: 1.5rem;
+  padding: 1rem;
   border-radius: 0.8rem;
   -webkit-box-shadow: 0px 20px 11px -9px rgba(0, 0, 0, 0.71);
   -moz-box-shadow: 0px 20px 11px -9px rgba(0, 0, 0, 0.71);
@@ -118,6 +126,10 @@
 .header-menu-subcriber-center a {
   color: var(--faynet-purple-dark);
   font-weight: var(--font-weight-regular);
+}
+
+.header-menu-subcriber-center img {
+  max-width: 1.6rem;
 }
 
 .header-menu-subcriber-center {

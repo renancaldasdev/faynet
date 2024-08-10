@@ -1,12 +1,16 @@
 document.getElementById("hamburger").addEventListener("click", function () {
   this.classList.toggle("show");
   document.getElementById("menu").classList.toggle("show");
+
+  document.body.classList.toggle("no-scroll");
 });
 
 document.querySelectorAll("#menu li a").forEach((item) => {
   item.addEventListener("click", function () {
     document.getElementById("hamburger").classList.remove("show");
     document.getElementById("menu").classList.remove("show");
+
+    document.body.classList.remove("no-scroll");
   });
 });
 

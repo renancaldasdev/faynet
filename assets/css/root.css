@@ -84,3 +84,55 @@ body {
   background-color: var(--faynet-purple-dark);
   color: var(--faynet-white);
 }
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.image-whats {
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+  z-index: 1;
+  animation: moveUpDown 2s linear infinite;
+}
+
+.image-whats svg {
+  width: 6rem;
+  height: auto;
+}
+
+@keyframes moveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@media (max-width: 500px) {
+  .image-whats {
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .image-whats svg {
+    width: 4rem;
+  }
+
+  .image-whats p {
+    width: 100px;
+    padding: 4px 8px;
+    top: -40px;
+    left: -100px;
+    font-size: 1.4rem;
+  }
+
+  .image-whats p::before {
+    bottom: -6px;
+    left: 96%;
+    rotate: 140deg;
+  }
+}
