@@ -1,14 +1,6 @@
 @media (min-width: 0px) and (max-width: 767px) {
-  .plans-perfect-for-you-cards {
-    display: flex;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-  }
-
   .plans-perfect-for-you-card {
-    flex: 0 0 100%;
-    scroll-snap-align: start;
-    margin: 0 5px;
+    max-width: 100%;
   }
 
   .call-to-action a {
@@ -195,6 +187,10 @@
   .banner-hero-promotion-title h3 {
     font-size: 2.4rem;
     line-height: 3rem;
+  }
+
+  .internet-your-family-img img {
+    display: none;
   }
 
   /* Responsivo plans */

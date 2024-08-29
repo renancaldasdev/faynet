@@ -76,6 +76,35 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
+  const swiperMobile = window.innerWidth <= 768; // Ativa o slider no mobile (menor que 768px)
+
+  if (swiperMobile) {
+    var swiper = new Swiper(".swiper-container", {
+      slidesPerView: 1,
+      loop: true,
+      centeredSlides: true,
+      spaceBetween: 20,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      effect: "coverflow",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+    });
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
   const photos = [
     {
       url: "https://lh3.googleusercontent.com/a-/ALV-UjWrGOWuf0DwECJ6Pfv97rjY1O0gSjhw5vZNu3aGBdznBhIEoAZq=s45-c-rp-mo-br100",
