@@ -1,8 +1,4 @@
 @media (min-width: 0px) and (max-width: 767px) {
-  .plans-perfect-for-you-card {
-    max-width: 100%;
-  }
-
   .call-to-action a {
     width: 100%;
   }
@@ -208,6 +204,7 @@
 
   .plans-perfect-for-you-card {
     flex: 0 0 auto;
+    max-width: 100%;
   }
 
   .plans-perfect-for-you-card.special-offer {

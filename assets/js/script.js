@@ -82,22 +82,17 @@ document.addEventListener("DOMContentLoaded", function () {
     var swiper = new Swiper(".swiper-container", {
       slidesPerView: 1,
       loop: true,
-      centeredSlides: true,
-      spaceBetween: 20,
+      spaceBetween: 0,
       autoplay: {
         delay: 4000,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
+        disableOnInteraction: true,
       },
       effect: "coverflow",
       coverflowEffect: {
-        rotate: 50,
+        rotate: 0,
         stretch: 0,
-        depth: 100,
-        modifier: 1,
+        depth: 1,
+        modifier: 0,
         slideShadows: true,
       },
     });
