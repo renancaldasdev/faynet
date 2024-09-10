@@ -115,3 +115,39 @@
   padding: 1.4rem;
   width: 24rem;
 }
+
+.portabilidade {
+  background: url("../images/images_all/bg_portabilidade.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 3rem;
+  border-radius: 1.2rem;
+}
+
+.portabilidade-text {
+  color: var(--faynet-white);
+  font-size: 1.8rem;
+  line-height: 2rem;
+  text-shadow: 2px 2px black;
+}
+.portabilidade-text p:last-child {
+  font-size: 2.2rem;
+  line-height: 2.4rem;
+  margin-top: 1rem;
+}
+
+.portabilidade .call-to-action {
+  margin-top: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.portabilidade .call-to-action a {
+  font-weight: bold;
+}
+
+.portabilidade .call-to-action a:hover {
+  background-color: var(--faynet-yellow);
+  color: var(--faynet-purple-dark);
+}
