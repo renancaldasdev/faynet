@@ -118,7 +118,7 @@
 
 .portabilidade {
   background: url("../images/images_all/bg_portabilidade.webp");
-  background-position: center;
+  background-position: center 30%;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 3rem;

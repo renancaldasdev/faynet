@@ -198,11 +198,11 @@
 
   .plans-perfect-for-you-cards {
     justify-content: inherit;
-    white-space: nowrap;
     margin-bottom: 4rem;
   }
 
   .plans-perfect-for-you-card {
+    margin-left: -14px;
     flex: 0 0 auto;
     max-width: 100%;
   }
@@ -222,6 +222,10 @@
 
   .plans-perfect-for-you-card-plan {
     z-index: -1;
+  }
+
+  .plan-mobile {
+    display: block;
   }
 
   /* responsivo your family */
@@ -289,6 +293,12 @@
 
   .the-best-service-for-you-content {
     flex-direction: column;
+  }
+
+  .portabilidade-text,
+  .portabilidade-text p:last-child {
+    font-size: 1.8rem;
+    line-height: 2rem;
   }
 
   .the-best-service-for-you-text h2 {
