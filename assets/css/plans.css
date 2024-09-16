@@ -45,15 +45,16 @@
 .plans-perfect-for-you-card-best-offer {
   background-color: var(--faynet-yellow);
   color: #6633cc;
-  padding: 0.8rem 4rem;
+  padding: 1rem 4rem;
   border: 2px solid var(--faynet-white);
   border-radius: 1.5rem;
   position: absolute;
-  top: -1.5rem;
+  top: 1rem;
   left: 50%;
   transform: translateX(-50%);
   white-space: nowrap;
   font-weight: var(--font-weight-medium);
+  z-index: 999;
 }
 
 .plans-perfect-for-you-card-plan {

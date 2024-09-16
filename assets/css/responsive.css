@@ -203,7 +203,7 @@
   }
 
   .plans-perfect-for-you-card {
-    margin-left: -14px;
+    margin-left: -10px;
     flex: 0 0 auto;
     max-width: 100%;
   }
@@ -215,7 +215,7 @@
 
   .plans-perfect-for-you-card-best-offer {
     top: 20px;
-    left: -19px;
+    left: -4px;
     transform: rotate(-30deg);
     padding: 0.8rem 1rem;
     font-size: 1.2rem;
