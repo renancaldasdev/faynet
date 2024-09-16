@@ -208,7 +208,3 @@
   a::before {
   border: 2px solid var(--faynet-white);
 }
-
-.plan-mobile {
-  display: none;
-}
